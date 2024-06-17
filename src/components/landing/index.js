@@ -3,9 +3,9 @@ import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Carouselfade from "../carousel/CarouselSlow";
-import Slide1 from "../../assets/1.jpeg";
-import Slide2 from "../../assets/2.jpeg";
-import Slide3 from "../../assets/4.jpeg";
+import Slide1 from "../../assets/1.jpg";
+import Slide2 from "../../assets/2.jpg";
+import Slide3 from "../../assets/4.jpg";
 import PatterImg from "../../assets/4.png"
 import Book1 from "../../assets/book1.png";
 import Book2 from "../../assets/book2.png";
