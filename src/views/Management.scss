@@ -1,0 +1,33 @@
+.management {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #636363;
+    padding-top: 180px;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 80px;
+        padding: 50px;
+        width: 100%;
+
+        .card-body {
+            padding: unset;
+
+            .form-page {
+                display: flex;
+                justify-content: space-around;
+
+                .form-control {
+                    display: unset;
+                }
+            }
+
+            .btn-line {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

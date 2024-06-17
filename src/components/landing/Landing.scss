@@ -1,0 +1,116 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 130px;
+    z-index: 1;
+    
+    .pattern {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+
+        .image-left {
+            flex: 1;
+            margin: 30px;
+        }
+
+        .pattern-text {
+            flex: 1;
+            margin: 30px;
+
+            p {
+                width: 600px;
+            }
+        }
+    }
+
+    .books {
+        display: flex;
+        flex-direction: column;
+        background: rgb(117, 117, 117);
+        padding: 50px;
+
+        h1 {
+            padding: 50px 100px 50px 100px;
+        }
+
+        .books-gallery {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 100px 50px 100px;
+            flex-wrap: wrap;
+
+            .book-card {
+                margin: 20px;
+                padding: 20px;
+
+                .book-logo {
+                    height: 500px;
+                    width: 380px;
+                }
+        
+                .card-text-book {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+    .cta-bg {
+        background: url('../../assets/banner-2.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        height: 500px;
+        position: relative;
+    }
+
+    .introduce {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+
+        .image-left {
+            height: 400px;
+            margin: 30px;
+            padding-right: 100px;
+        }
+
+        .pattern-text {
+            margin: 30px;
+
+            p {
+                width: 600px;
+            }
+        }
+    }
+
+    .members {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(107, 106, 106);
+        padding: 50px;
+
+        h1 {
+            padding: 50px 100px 50px 100px;
+        }
+
+        .member-card {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+
+            .card-title {
+                color: rgb(152, 21, 150);
+            }
+
+            .card {
+                margin: 20px;
+            }
+        }
+    }
+}

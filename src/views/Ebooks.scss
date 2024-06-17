@@ -1,0 +1,16 @@
+.ebooks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #5e5d5d;
+    padding: 280px 40px 40px 40px;
+
+    .card-title {
+        color: rgb(152, 21, 150);
+    }
+
+    .card {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background: rgb(152, 21, 150);
+    height: 160px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .baner {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .logo {
+            height: 90px;
+            margin: 5px;
+        }
+
+        .auth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                margin: 5px;
+                color: white;
+                text-decoration: none;
+
+                a:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(175, 25, 173);
+        padding-right: 80px;
+        height: 60px;
+
+        .menu-btn {
+            a {
+                color: white;
+                font-size: 18px;
+                font-family: Trajan Pro;
+                text-decoration: none;
+                padding: 17px;
+            }
+
+            a:hover {
+                background: rgb(149, 17, 146);
+                color: yellow;
+                padding: 17px;
+                border-bottom: solid 4px yellow;
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-family: Trajan;
+
+            .form-control {
+                background-color: rgb(175, 25, 173);
+                border-top: 0ch;
+                border-left: 0ch;
+                border-right: 0ch;
+                border-color: rgb(255, 1, 251);
+                color: white;
+                margin-left: 10px;
+                width: unset;
+            }
+        }
+    }
+}

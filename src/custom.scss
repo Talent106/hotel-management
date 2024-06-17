@@ -1,0 +1,18 @@
+h1, h2, h3 {
+  font-family: Trajan Pro;
+}
+
+a {
+  font-family: sans-serif;
+}
+
+$theme-colors: (
+  'primary': rgb(152, 21, 150),
+  'success': green,
+  'danger': #e80303,
+  'info': tomato
+);
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
