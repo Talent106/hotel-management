@@ -84,28 +84,24 @@
         }
     }
 
-    .members {
+    .rooms {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         background-color: #181818;
-        padding: 50px;
+        padding: 0 30px 0 30px;
 
         h1 {
             padding: 50px 100px 50px 100px;
         }
 
-        .member-card {
+        .room-card {
             display: flex;
             justify-content: space-around;
-            margin: 20px;
-
-            .card-title {
-                color: rgb(152, 21, 150);
-            }
+            flex-wrap: wrap;
 
             .card {
-                margin: 20px;
+                margin: 50px;
             }
         }
     }
