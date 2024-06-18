@@ -20,6 +20,29 @@ const Register = () => {
                         <h4 className="mb-4 text-primary">Good morning</h4>
                         <div className="center-side">
                             <Card.Title>Create an Account</Card.Title>
+                            <div className="flex-d w-100">
+                                <Button
+                                    className="mt-4 ms-2"
+                                    variant="outline-info"
+                                >
+                                    <i className="bi bi-google me-2"/>
+                                    Continue with Google
+                                </Button>
+                                <Button
+                                    className="mt-2 ms-2"
+                                    variant="outline-info"
+                                >
+                                    <i className="bi bi-facebook me-2"/>
+                                    Continue with Facebook
+                                </Button>
+                                <Button
+                                    className="mt-2 ms-2"
+                                    variant="outline-info"
+                                >
+                                    <i className="bi bi-linkedin me-2"/>
+                                    Continue with Linkedin
+                                </Button>
+                            </div>
                             <Form>
                                 <Form.Group controlId="exampleForm.ControlInput1">
                                     <Form.Label>Email address*</Form.Label>

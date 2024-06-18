@@ -10,8 +10,14 @@ $theme-colors: (
   'primary': rgb(68, 5, 67),
   'success': green,
   'danger': #e80303,
-  'info': tomato
+  'info': rgb(0, 251, 255)
 );
+
+// flex
+.flex-d {
+  display: flex;
+  flex-direction: column;
+}
 
 // color
 .snow {
