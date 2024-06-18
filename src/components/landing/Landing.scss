@@ -8,6 +8,7 @@
     .pattern {
         display: flex;
         justify-content: flex-start;
+        background-color: #000000;
 
         .image-left {
             height: 600px;
@@ -88,7 +89,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: #181818;
+        background-color: #000000;
         padding: 60px;
 
         .room-card {
