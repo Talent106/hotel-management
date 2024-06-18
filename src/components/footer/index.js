@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="contact">
             <div className="flex-d">
                 <h3 className="snow">Contact Us</h3>
-                <div className="d-flex">
+                <div className="d-flex mt-3">
                     <i className="bi bi-geo-alt-fill snow f-25 me-3" />
                     <div className="flex-d">
                         <h5 className="snow">Officeal Address</h5>
@@ -34,7 +34,7 @@ const Footer = () => (
             </div>
             <div className="flex-d">
                 <h3 className="snow">Recent News</h3>
-                <div className="d-flex">
+                <div className="d-flex mt-3">
                     <Image className="me-3" src={Img1} style={{ width: '8rem' }} rounded/>
                     <div className="flex-d">
                         <p>The Start-Up Ultimate Guide to Make Your WordPress Journal.</p>
