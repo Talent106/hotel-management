@@ -7,11 +7,10 @@
     
     .pattern {
         display: flex;
-        justify-content: space-evenly;
-        padding: 50px;
+        justify-content: flex-start;
 
         .image-left {
-            margin: 30px;
+            height: 600px;
         }
 
         .pattern-text {
@@ -43,17 +42,17 @@
             padding: 50px;
 
             h1 {
-                color: yellow;
+                color: snow;
             }
 
             p {
-                color: snow;
+                color: rgb(202, 202, 202);
             }
         }
     }
 
     .cta-bg {
-        background: url('../../assets/banner-2.png');
+        background: url('../../assets/banner.jpg');
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
@@ -63,21 +62,24 @@
 
     .introduce {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
+        justify-content: flex-start;
 
         .image-left {
-            height: 400px;
-            margin: 30px;
-            padding-right: 100px;
+            height: 600px;
         }
 
         .pattern-text {
-            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+
+            h1 {
+                color: yellow;
+            }
 
             p {
-                width: 600px;
+                color: snow;
             }
         }
     }
@@ -86,7 +88,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: rgb(107, 106, 106);
+        background-color: #181818;
         padding: 50px;
 
         h1 {

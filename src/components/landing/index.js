@@ -6,9 +6,9 @@ import Carouselfade from "../carousel/CarouselSlow";
 import Slide1 from "../../assets/1.jpg";
 import Slide2 from "../../assets/2.jpg";
 import Slide3 from "../../assets/3.jpg";
-import PatterImg from "../../assets/dc2.png"
+import PatterImg from "../../assets/hotel.jpg"
 import GuestRoom from "../../assets/guest.jpg";
-import IntroImg from "../../assets/dc1.png";
+import IntroImg from "../../assets/checkin.png";
 import Member1 from "../../assets/member1.png";
 import Member2 from "../../assets/member2.png";
 import Member3 from "../../assets/member3.png";
@@ -56,16 +56,9 @@ const Landing = () => {
             <div className="introduce">
                 <Image className="image-left" src={IntroImg} rounded/>
                 <div className="pattern-text">
-                    <h1>Your Guide to Recovery from Mold Exposure</h1>
-                    <p>Ingrid Naiman is a world respected author and clinician. Her house was flooded 
-                        following faulty installation of a washing machine, and she was deathly ill. 
-                        Contrary to the advice of many, she remediated the damage to the house, and eventually 
-                        recovered her her health using 100% natural methods. Her journey took several years 
-                        of study, but she has been there and reclaimed her cognitive functions and vitality.  
-                        Her mission is to make people aware of the risks and to guide them safely through the 
-                        steps necessary to make the living and working space safe while simultaneously 
-                        regenerating the body and mind after exposure to mold.  Join her and find out how 
-                        to make complex decisions that affect life itself. 
+                    <h1>Pet Friendly Hotel</h1>
+                    <p>We welcome guide dogs and service animals free of charge. Please enquire prior to arrival to 
+                        make arrangements for your animal. Pet Fee per night 80 PLN. 
                     </p>
                 </div>
             </div>
