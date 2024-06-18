@@ -7,53 +7,47 @@
     
     .pattern {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 50px;
 
         .image-left {
-            flex: 1;
             margin: 30px;
         }
 
         .pattern-text {
-            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-evenly;
             margin: 30px;
+            width: 50%;
+
+            h1 {
+                color: yellow;
+            }
 
             p {
-                width: 600px;
+                color: snow;
             }
         }
     }
 
-    .books {
+    .guest {
         display: flex;
-        flex-direction: column;
-        background: rgb(117, 117, 117);
-        padding: 50px;
+        justify-content: space-evenly;
 
-        h1 {
-            padding: 50px 100px 50px 100px;
-        }
-
-        .books-gallery {
+        .guest-text {
             display: flex;
-            justify-content: space-around;
-            padding: 50px 100px 50px 100px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
 
-            .book-card {
-                margin: 20px;
-                padding: 20px;
+            h1 {
+                color: yellow;
+            }
 
-                .book-logo {
-                    height: 500px;
-                    width: 380px;
-                }
-        
-                .card-text-book {
-                    display: flex;
-                    justify-content: space-around;
-                }
+            p {
+                color: snow;
             }
         }
     }

@@ -6,21 +6,13 @@ import Carouselfade from "../carousel/CarouselSlow";
 import Slide1 from "../../assets/1.jpg";
 import Slide2 from "../../assets/2.jpg";
 import Slide3 from "../../assets/3.jpg";
-import PatterImg from "../../assets/4.png"
-import Book1 from "../../assets/book1.png";
-import Book2 from "../../assets/book2.png";
-import Book3 from "../../assets/book3.png";
+import PatterImg from "../../assets/dc2.png"
+import GuestRoom from "../../assets/guest.jpg";
 import IntroImg from "../../assets/dc1.png";
 import Member1 from "../../assets/member1.png";
 import Member2 from "../../assets/member2.png";
 import Member3 from "../../assets/member3.png";
 import './Landing.scss';
-
-const Books = [
-    { name: "Immunity", src: Book1, price: 35, views: 30 },
-    { name: "Parasite Cleansing", src: Book2, price: 50, views: 30 },
-    { name: "Kitchen Doctor", src: Book3, price: 65, views: 70 }
-];
 
 const Members = [
     { name: "Ingrid Naiman", src: Member1, content: "I have developed a complete line of herbal products and essential oils to recover from mold exposure." },
@@ -36,40 +28,26 @@ const Landing = () => {
             <div className="pattern">
                 <Image className="image-left" src={PatterImg} rounded/>
                 <div className="pattern-text">
-                    <h1>Mold Journey</h1>
-                    <p>Within hours of exposure to moisture, mold can appear. Besides the risk 
-                        mold poses to health, it can cause serious property damage. Any property 
-                        or possessions that have been exposed to moisture may become colonized by mold. 
-                        This means that when there is heavy rain, melting snow, flooding, leaking pipes, 
-                        clogged pipes, poor drainage, damp crawl spaces, attics, or basements, mold will 
-                        probably be present. Likewise, mold can be found in air conditioners, air filtration 
-                        devices, humidifiers and dehumidifiers, certain kinds of medical equipment, potted 
-                        plants, greenhouses, refrigerators, washing machines, automobiles, hotels, restaurants, 
-                        libraries, concert halls, in short, just about anywhere. At best, mold will cause 
-                        deterioration and loss of value to real property and belongings. At worst, it will 
-                        eventually claim the lives of pets, loved ones, and oneself. The purpose of this 
-                        series is to promote vigilance surrounding mold and to define the correct procedures 
-                        for removing mold and recovering full health after exposure.
+                    <h1>Boutique Hotel By Krakow Old Town</h1>
+                    <p>In the heart of the city and next to Florian Gate, the largest gate into the historical city,
+                        sits the Hotel Indigo® Krakow – Old Town. Housed in a stunning 19th century building. 
+                        The hotel design has been inspired by three Polish painters from different centuries and that heritage 
+                        has been subtly brought into our rooms and our public areas. Old Kleparz market is opposite our hotel and 
+                        we are walking distance to Krakow’s Main Square, St. Mary’s Basilica, the Clothes Hall, the main shopping 
+                        street (Florianska), Wawel Castle and the Jewish district.
                     </p>
                 </div>
             </div>
 
-            <div className="books">
-                <h1>BOOKS</h1>
-                <div className="books-gallery">
-                    {Books.map((item) =>
-                        <Card className="book-card">
-                            <Card.Img className="book-logo" variant="top" src={item.src} />
-                            <Card.Body>
-                                <Card.Text className="card-text-book">
-                                    <a>{item.name}</a>                                
-                                    <a>{item.views}</a>
-                                    <a>${item.price}</a>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    )}
+            <div className="guest">
+                <div className="guest-text">
+                    <h1>Guest Rooms</h1>
+                    <p>Our individually designed rooms are inspired by the most renowned polish painters. Rooms have been 
+                        furnished in the highest standards and equipped with the most hi tech devices and solutions to increase 
+                        the comfort level. All rooms provide free Wi-Fi, coffee facilities, safe, minibar.
+                    </p>
                 </div>
+                <Image className="image-right" src={GuestRoom} rounded/>
             </div>
 
             <div className="cta-bg">
