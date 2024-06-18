@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import SideBarImg from "../../assets/login-1.png";
+import SideBarImg from "../../assets/login.jpg";
 import './Login.scss';
 
 const Login = () => {

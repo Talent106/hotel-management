@@ -1,10 +1,7 @@
 .login {
     display: flex;
     flex-direction: column;
-    background: url('../../assets/login-bg.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
+    background-color: #202020;
     padding-top: 180px;
     min-height: 900px;
     z-index: 1;

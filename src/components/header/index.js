@@ -13,7 +13,7 @@ const Header = () => {
           <div className="auth">
             <a href="/login" className=""><i className="bi-lock-fill me-2"/>Login</a>
             <a>|</a>
-            <a href="/register" className=""><i className="bi-person-fill-add me-2"/>Register</a>
+            <a href="/register" className=""><i className="bi-person-fill-add me-2"/>Sign UP</a>
           </div>
         </div>
 
