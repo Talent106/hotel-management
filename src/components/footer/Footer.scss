@@ -4,32 +4,15 @@
     
     .contact {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         background: url('../../assets/bg3.png');
         background-attachment: fixed;
         background-position: center center;
         background-size: cover;
         color: rgb(150, 150, 150);
-        padding: 50px;
+        padding: 100px;
         position: relative;
         height: 540px;
-
-        h2 {
-            color: white;
-        }
-
-        .items {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            a {
-                margin: 20px;
-                text-decoration: none;
-            }
-        }
     }
 
     .copyright {

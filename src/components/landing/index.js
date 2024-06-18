@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Carouselfade from "../carousel/CarouselSlow";
 import Slide1 from "../../assets/1.jpg";
 import Slide2 from "../../assets/2.jpg";
