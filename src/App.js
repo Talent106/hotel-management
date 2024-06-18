@@ -6,7 +6,7 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import Home from "./views";
-import EBooks from "./views/Ebooks";
+import Rooms from "./views/Rooms";
 import Management from "./views/Management";
 import Users from "./views/Users";
 import Register from "./views/auth/Register";
@@ -19,9 +19,9 @@ const publicRouter = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Home />} />,
     <Route path='login' element={<Login />}/>,
     <Route path='register' element={<Register />} />,
-    <Route path='e-books' element={<EBooks />} />,
-    <Route path='management' element={<Management />} />,
-    <Route path='users' element={<Users />} />
+    <Route path='rooms' element={<Rooms />} />,
+    <Route path='services' element={<Management />} />,
+    <Route path='reviews' element={<Users />} />
   ]
 ));
 

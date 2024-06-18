@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Member1 from "../assets/member1.png";
 import Member2 from "../assets/member2.png";
 import Member3 from "../assets/member3.png";
-import './Ebooks.scss';
+import './Rooms.scss';
 
 const Members = [
     { name: "Ingrid Naiman", src: Member1, content: "I have developed a complete line of herbal products and " },
@@ -15,7 +15,7 @@ const Members = [
     { name: "Balaji Sampath", src: Member3, content: "I am administering the Locals.com community." }
 ];
 
-const Ebooks = () => {
+const Rooms = () => {
     return (
         <div className="ebooks">
             {Members.map((item) =>
@@ -34,4 +34,4 @@ const Ebooks = () => {
     )
 }
 
-export default Ebooks;
+export default Rooms;
