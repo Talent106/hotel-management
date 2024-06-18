@@ -20,9 +20,9 @@ const Header = () => {
         <div className="menu">
           <div className="menu-btn">
             <a href="/"><i className="bi-bank2 me-2"/>HOME</a>
-            <a href="/e-books"><i className="bi-book-fill me-2"/>E-BOOKS</a>
-            <a href="/management"><i className="bi-gear me-2"/>MANAGEMENT</a>
-            <a href="/users"><i className="bi-people-fill me-2"/>USERS</a>
+            <a href="/e-books"><i className="bi bi-door-open-fill me-2"/>ROOMS</a>
+            <a href="/management"><i className="bi bi-bookmark-heart-fill me-2"/>HOTEL SERVICES</a>
+            <a href="/users"><i className="bi-people-fill me-2"/>CUSTOMER REVIEWS</a>
           </div>
           <div className="search">
             SEARCH:
