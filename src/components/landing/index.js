@@ -5,7 +5,7 @@ import Carouselfade from "../carousel/CarouselSlow";
 import Slide1 from "../../assets/1.jpg";
 import Slide2 from "../../assets/2.jpg";
 import Slide3 from "../../assets/3.jpg";
-import PatterImg from "../../assets/hotel.jpg"
+import PatterImg from "../../assets/hotel.jpg";
 import GuestRoom from "../../assets/guest.jpg";
 import IntroImg from "../../assets/checkin.png";
 import Rooms from "../../constracts/Rooms";
