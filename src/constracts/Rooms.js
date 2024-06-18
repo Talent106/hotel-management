@@ -1,9 +1,9 @@
-import Room1 from "../assets/room1.jpg";
-import Room2 from "../assets/room2.jpg";
-import Room3 from "../assets/room3.jpg";
-import Room4 from "../assets/room4.jpg";
-import Room5 from "../assets/room5.jpg";
-import Room6 from "../assets/room6.jpg";
+import Room1 from "../assets/rooms/room1.jpg";
+import Room2 from "../assets/rooms/room2.jpg";
+import Room3 from "../assets/rooms/room3.jpg";
+import Room4 from "../assets/rooms/room4.jpg";
+import Room5 from "../assets/rooms/room5.jpg";
+import Room6 from "../assets/rooms/room6.jpg";
 
 const Rooms = [
     { name: "Ingrid Naiman", src: Room1, content: "I have developed a complete line of herbal products and essential oils to recover from mold exposure." },
