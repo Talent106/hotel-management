@@ -15,6 +15,7 @@ const AllRooms = [
         content: "Upgraded bedroom with flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults.",
         max: 2,
         bed: "King size bed(s) x1",
+        reviews: 5,
         price: 330
     },
     {
@@ -23,6 +24,7 @@ const AllRooms = [
         max: 2,
         bed: "King size bed(s) x1",
         price: 400,
+        reviews: 4,
         content: "Upgraded bedroom with sea views and balcony, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robes and slippers. Sleeps up to 2 adults."
     },
     {
@@ -31,6 +33,7 @@ const AllRooms = [
         max: 2,
         bed: "Double bed(s) x1",
         price: 300,
+        reviews: 3,
         content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
     },
     {
@@ -39,6 +42,7 @@ const AllRooms = [
         max: 2,
         bed: "Double bed(s) x1",
         price: 350,
+        reviews: 5,
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
     {
@@ -47,6 +51,7 @@ const AllRooms = [
         max: 2,
         bed: "King size bed(s) x2",
         price: 330,
+        reviews: 5,
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
     {
@@ -55,6 +60,7 @@ const AllRooms = [
         max: 2,
         bed: "King size bed(s) x2",
         price: 330,
+        reviews: 4,
         content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
     },
     {
@@ -63,6 +69,7 @@ const AllRooms = [
         max: 2,
         bed: "King size bed(s) x1",
         price: 320,
+        reviews: 3,
         content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
     },
     {
@@ -71,6 +78,7 @@ const AllRooms = [
         max: 2,
         bed: "King size bed(s) x1",
         price: 380,
+        reviews: 2,
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
     {
@@ -79,6 +87,7 @@ const AllRooms = [
         max: 2,
         bed: "King size bed(s) x1",
         price: 310,
+        reviews: 5,
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
 ];

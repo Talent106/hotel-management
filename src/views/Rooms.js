@@ -19,6 +19,41 @@ const Rooms = () => {
                             <i className="bi bi-bookmark-plus-fill" /> {item.bed}
                         </Card.Text>
                         <Card.Text>
+                            {item.reviews == 5 &&
+                                <>
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                </>
+                            }
+                            {item.reviews == 4 &&
+                                <>
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                </>
+                            }
+                            {item.reviews == 3 &&
+                                <>
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                </>
+                            }
+                            {item.reviews == 2 &&
+                                <>
+                                    <i className="bi bi-star-fill text-yellow" />
+                                    <i className="bi bi-star-fill text-yellow" />
+                                </>
+                            }
+                            {item.reviews == 1 &&
+                                <i className="bi bi-star-fill text-yellow" />
+                            }
+                        </Card.Text>
+                        <Card.Text>
                             From <span className="f-arial f-25 text-primary">${item.price}</span>
                             <p>Fees and taxes included</p>
                         </Card.Text>
