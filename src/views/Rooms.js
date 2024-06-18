@@ -13,7 +13,14 @@ const Rooms = () => {
                     <Card.Body>
                         <Card.Title>{item.name}</Card.Title>
                         <Card.Text>
-                            {item.content}
+                            <i className="bi bi-people-fill" /> {item.max} pers.max
+                        </Card.Text>
+                        <Card.Text>
+                            <i className="bi bi-bookmark-plus-fill" /> {item.bed}
+                        </Card.Text>
+                        <Card.Text>
+                            From <span className="f-arial f-25 text-primary">${item.price}</span>
+                            <p>Fees and taxes included</p>
                         </Card.Text>
                         <Button variant="primary">View Details</Button>
                     </Card.Body>

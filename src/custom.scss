@@ -7,7 +7,7 @@ a {
 }
 
 $theme-colors: (
-  'primary': rgb(152, 21, 150),
+  'primary': rgb(68, 5, 67),
   'success': green,
   'danger': #e80303,
   'info': tomato
@@ -19,6 +19,11 @@ $theme-colors: (
 }
 
 // font
+.f-arial {
+  font-family: 'Arial Black';
+}
+
+// font-size
 .f-25 {
   font-size: 25px;
 }
