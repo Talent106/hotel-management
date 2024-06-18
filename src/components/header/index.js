@@ -22,7 +22,6 @@ const Header = () => {
             <a href="/"><i className="bi-bank2 me-2"/>HOME</a>
             <a href="/rooms"><i className="bi bi-door-open-fill me-2"/>ROOMS</a>
             <a href="/services"><i className="bi bi-bookmark-heart-fill me-2"/>HOTEL SERVICES</a>
-            <a href="/reviews"><i className="bi-people-fill me-2"/>CUSTOMER REVIEWS</a>
           </div>
           <div className="search">
             SEARCH:
