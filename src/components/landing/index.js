@@ -58,7 +58,7 @@ const Landing = () => {
             <div className="rooms">
                 <div className="room-card">
                     {Rooms.map((item) =>
-                        <Card style={{ width: '25rem' }}>
+                        <Card style={{ width: '25rem', height: '25rem' }}>
                             <Card.Img variant="top" src={item.src} />
                         </Card>
                     )}
