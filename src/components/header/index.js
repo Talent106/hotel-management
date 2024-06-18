@@ -1,6 +1,6 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.jpg";
 import Logo1 from "../../assets/logo1.png";
 import './Header.scss';
 
