@@ -17,14 +17,70 @@ const AllRooms = [
         bed: "King size bed(s) x1",
         price: 330
     },
-    { name: "Hiroki Moto", src: Room2, content: "I am assuring the availability of digital materials needed to recover." },
-    { name: "Balaji Sampath", src: Room3, content: "I am administering the Locals.com community." },
-    { name: "Ingrid Naiman", src: Room4, content: "I have developed a complete line of herbal products and " },
-    { name: "Hiroki Moto", src: Room5, content: "I am assuring the availability of digital materials needed to recover." },
-    { name: "Balaji Sampath", src: Room6, content: "I am administering the Locals.com community." },
-    { name: "Balaji Sampath", src: Room7, content: "I am administering the Locals.com community." },
-    { name: "Balaji Sampath", src: Room8, content: "I am administering the Locals.com community." },
-    { name: "Balaji Sampath", src: Room9, content: "I am administering the Locals.com community." },
+    {
+        name: "Privilege Room with 1 Double Bed, sea view and balcony",
+        src: Room2,
+        max: 2,
+        bed: "King size bed(s) x1",
+        price: 400,
+        content: "Upgraded bedroom with sea views and balcony, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robes and slippers. Sleeps up to 2 adults."
+    },
+    {
+        name: "Classic accessible room with 1 double bed",
+        src: Room3,
+        max: 2,
+        bed: "Double bed(s) x1",
+        price: 300,
+        content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
+    },
+    {
+        name: "Privilege Room with 1 Double Bed, sea view and balcony",
+        src: Room4,
+        max: 2,
+        bed: "Double bed(s) x1",
+        price: 350,
+        content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
+    },
+    {
+        name: "Privilege Room with 2 Single Beds",
+        src: Room5,
+        max: 2,
+        bed: "King size bed(s) x2",
+        price: 330,
+        content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
+    },
+    {
+        name: "Privilege Room with 2 Single Beds",
+        src: Room6,
+        max: 2,
+        bed: "King size bed(s) x2",
+        price: 330,
+        content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
+    },
+    {
+        name: "Privilege Room with 1 Double Bed",
+        src: Room7,
+        max: 2,
+        bed: "King size bed(s) x1",
+        price: 320,
+        content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
+    },
+    {
+        name: "Privilege Room with 1 Double Bed, sea view and balcony",
+        src: Room8,
+        max: 2,
+        bed: "King size bed(s) x1",
+        price: 380,
+        content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
+    },
+    {
+        name: "Privilege Room with 1 Double Bed",
+        src: Room9,
+        max: 2,
+        bed: "King size bed(s) x1",
+        price: 310,
+        content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
+    },
 ];
 
 export default AllRooms;
