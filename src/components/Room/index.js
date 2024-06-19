@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'react-bootstrap/Image';
+import Carouselfade from "../carousel/CarouselSlow";
 import Stars from "../Stars";
 import './Room.scss';
 
@@ -15,7 +16,7 @@ const Room = ({
             <p className="text-center ps-300 pe-300 f-25 snow">{content}</p>
 
             <div className="d-flex justify-center w-100">
-                <Carouselfade slide1={data[0]} slide2={data[1]} slide3={data[2]} />
+                <Carouselfade slide1={data.img1} slide2={data.img2} slide3={data.img3} />
             </div>
 
             <div className="w-100 snow flex-d justify-center align-center">
