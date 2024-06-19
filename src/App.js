@@ -15,23 +15,23 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 const publicRouter = createBrowserRouter(createRoutesFromElements(
-  [
-    <Route path='/' element={<Home />} />,
-    <Route path='login' element={<Login />}/>,
-    <Route path='register' element={<Register />} />,
-    <Route path='rooms' element={<Rooms />} />,
-    <Route path='services' element={<Services />} />,
-    <Route path='reviews' element={<Users />} />
-  ]
+	[
+		<Route path='/' element={<Home />} />,
+		<Route path='login' element={<Login />}/>,
+		<Route path='register' element={<Register />} />,
+		<Route path='rooms' element={<Rooms />} />,
+		<Route path='services' element={<Services />} />,
+		<Route path='reviews' element={<Users />} />
+	]
 ));
 
 const privateRouter = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<Home />}>
-            <Route path='start'>
-                
-            </Route>
-      </Route>
+		<Route path='/' element={<Home />}>
+			<Route path='start'>
+				
+			</Route>
+		</Route>
     ),
 );
 
@@ -41,7 +41,7 @@ function App() {
     return (
       <>
         <Header />
-        <RouterProvider router={logged ? privateRouter : publicRouter} />
+          	<RouterProvider router={logged ? privateRouter : publicRouter} />
         <Footer />
       </>
     );

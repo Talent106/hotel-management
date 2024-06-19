@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import classNames from "classnames";
@@ -9,9 +10,11 @@ import './Header.scss';
 
 const Header = () => {
 	const [active, setActive] = useState("/");
+	const history = useHistory();
 
 	const handleNav = (e) => {
 		setActive(e);
+		history.push(e);
 	}
 
 	return (
