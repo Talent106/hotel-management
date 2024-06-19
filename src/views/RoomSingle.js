@@ -13,6 +13,7 @@ const RoomSingle = () => {
     const [price, setPrice] = useState(null);
     const [reivews, setReviews] = useState(null);
     const [content, setContent] = useState(null);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
         const query = new URLSearchParams(params);
@@ -25,6 +26,7 @@ const RoomSingle = () => {
             setPrice(room.price);
             setReviews(room.reviews);
             setContent(room.content);
+            setData(room.data);
         }
     }, []);
 
@@ -37,6 +39,7 @@ const RoomSingle = () => {
             price={price}
             reivews={reivews}
             content={content}
+            data={data}
         />
     )
 }
