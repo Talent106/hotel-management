@@ -9,7 +9,7 @@ import LandingPageLayout from "./views/LandingPageLayout";
 import Home from "./views";
 import Rooms from "./views/Rooms";
 import Services from "./views/Services";
-import Users from "./views/Users";
+import Room from "./views/RoomSingle";
 import Register from "./views/auth/Register";
 import Login from "./views/auth/Login";
 
@@ -20,7 +20,7 @@ const publicRouter = createBrowserRouter(createRoutesFromElements(
 		<Route path="/register" element={<Register />} />
 		<Route path="/rooms" element={<Rooms />} />
 		<Route path="/services" element={<Services />} />
-		<Route path="/reviews" element={<Users />} />
+		<Route path="/room" element={<Room />} />
 	</Route>
 ));
 
