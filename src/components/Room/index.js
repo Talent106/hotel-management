@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'react-bootstrap/Image';
+import Stars from "../Stars";
 import './Room.scss';
 
 const Room = ({
@@ -10,43 +11,17 @@ const Room = ({
         <div className="room">
             <Image className="w-100" src={img} />
             <h1 className="text-yellow text-center pt-4">{name}</h1>
-            <div className="d-flex w-100 pb-4 justify-center">
-                {reviews == 5 &&
-                    <>
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                    </>
-                }
-                {reviews == 4 &&
-                    <>
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                    </>
-                }
-                {reviews == 3 &&
-                    <>
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                    </>
-                }
-                {reviews == 2 &&
-                    <>
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                        <i className="bi bi-star-fill text-yellow me-2" />
-                    </>
-                }
-                {reviews == 1 &&
-                    <i className="bi bi-star-fill text-yellow me-2" />
-                }
-            </div>
-            
+            <Stars reviews={reviews} />
             <p className="text-center ps-300 pe-300 f-25 snow">{content}</p>
+
+            <div className="d-flex justify-center w-100">
+                <Carouselfade slide1={data[0]} slide2={data[1]} slide3={data[2]} />
+            </div>
+
+            <div className="w-100 snow flex-d justify-center align-center">
+                <p>From <span className="f-arial f-25 text-info">${price}</span>, Fees and taxes included</p>
+                <p><i className="bi bi-people-fill f-25" /> {max} pers.max</p>
+            </div>
         </div>
     )
 }
