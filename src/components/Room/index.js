@@ -10,7 +10,7 @@ const Room = ({
 
     return (
         <div className="room">
-            <Image className="w-100" src={img} />
+            <Image className="w-100" src={data.img4} />
             <h1 className="text-yellow text-center pt-4">{name}</h1>
             <Stars reviews={reviews} />
             <p className="text-center ps-300 pe-300 f-25 snow">{content}</p>
