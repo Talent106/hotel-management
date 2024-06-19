@@ -10,6 +10,7 @@ import Room9 from "../assets/rooms/all/9-1.jpg";
 
 const AllRooms = [
     {
+        id: 1,
         name: "Privilege Room with 2 Single Beds",
         src: Room1,
         content: "Upgraded bedroom with flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults.",
@@ -19,6 +20,7 @@ const AllRooms = [
         price: 330
     },
     {
+        id: 2,
         name: "Privilege Room with 1 Double Bed, sea view and balcony",
         src: Room2,
         max: 2,
@@ -28,6 +30,7 @@ const AllRooms = [
         content: "Upgraded bedroom with sea views and balcony, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robes and slippers. Sleeps up to 2 adults."
     },
     {
+        id: 3,
         name: "Classic accessible room with 1 double bed",
         src: Room3,
         max: 2,
@@ -37,6 +40,7 @@ const AllRooms = [
         content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
     },
     {
+        id: 4,
         name: "Privilege Room with 1 Double Bed, sea view and balcony",
         src: Room4,
         max: 2,
@@ -46,6 +50,7 @@ const AllRooms = [
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
     {
+        id: 5,
         name: "Privilege Room with 2 Single Beds",
         src: Room5,
         max: 2,
@@ -55,6 +60,7 @@ const AllRooms = [
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
     {
+        id: 6,
         name: "Privilege Room with 2 Single Beds",
         src: Room6,
         max: 2,
@@ -64,6 +70,7 @@ const AllRooms = [
         content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
     },
     {
+        id: 7,
         name: "Privilege Room with 1 Double Bed",
         src: Room7,
         max: 2,
@@ -73,6 +80,7 @@ const AllRooms = [
         content: "Accessible rooms feature wheelchair turning space, alarm cords, wheel-in shower, bathroom grab rails, accessible bed, wardrobe, mirror and writing facilities. Audible and visual or vibrating fire alarms on request or installed."
     },
     {
+        id: 8,
         name: "Privilege Room with 1 Double Bed, sea view and balcony",
         src: Room8,
         max: 2,
@@ -82,6 +90,7 @@ const AllRooms = [
         content: "Upgraded bedroom with sea view, flat-screen TV, complimentary high speed WiFi, Nespresso coffee machine, robe and slippers. Sleeps 2 adults."
     },
     {
+        id: 9,
         name: "Privilege Room with 1 Double Bed",
         src: Room9,
         max: 2,
