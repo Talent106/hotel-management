@@ -62,7 +62,7 @@ const Rooms = () => {
                         </Card.Text>
                         <Button
                             variant="primary"
-                            onClick={() => navigate("/room")}
+                            onClick={() => navigate(`/room?ID=${item.id}`)}
                         >
                             View Details
                         </Button>
