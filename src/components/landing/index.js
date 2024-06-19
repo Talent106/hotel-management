@@ -17,7 +17,7 @@ const Landing = () => {
 
     return (
         <div className="landing">
-            <Carouselfade slide1={Slide1} slide2={Slide2} slide3={Slide3} />
+            <Carouselfade slide1={Slide1} slide2={Slide2} slide3={Slide3}/>
 
             <div className="pattern">
                 <Image className="image-left" src={PatterImg} rounded/>
