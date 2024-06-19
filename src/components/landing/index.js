@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Carouselfade from "../carousel/CarouselSlow";
@@ -12,6 +13,8 @@ import Rooms from "../../constracts/Rooms";
 import './Landing.scss';
 
 const Landing = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="landing">
             <Carouselfade slide1={Slide1} slide2={Slide2} slide3={Slide3} />
@@ -58,7 +61,7 @@ const Landing = () => {
                 <div className="room-card">
                     {Rooms.map((item) =>
                         <Card style={{ width: '25rem', height: '25rem' }}>
-                            <Card.Img variant="top" src={item.src} />
+                            <Card.Img className="pointer" variant="top" src={item.src} onClick={() => navigate(item.url)} />
                         </Card>
                     )}
                 </div>

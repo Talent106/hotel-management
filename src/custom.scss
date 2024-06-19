@@ -6,6 +6,10 @@ a {
   font-family: sans-serif;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 $theme-colors: (
   'primary': rgb(68, 5, 67),
   'success': green,
