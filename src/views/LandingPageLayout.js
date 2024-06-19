@@ -6,7 +6,9 @@ import Footer from "../components/footer/index";
 const LandingPageLayout = () => (
     <>
         <Header />
-        <Outlet />
+            <main>
+                <Outlet />
+            </main>
         <Footer />
     </>
 );
