@@ -13,7 +13,7 @@ const RoomSingle = () => {
     const [price, setPrice] = useState(null);
     const [reviews, setReviews] = useState(null);
     const [content, setContent] = useState(null);
-    const [data, setData] = useState(null);
+    const [data, setData] = useState({});
 
     useEffect(() => {
         const query = new URLSearchParams(params);
