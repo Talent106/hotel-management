@@ -11,7 +11,7 @@ const RoomSingle = () => {
     const [max, setMax] = useState(null);
     const [bed, setBed] = useState(null);
     const [price, setPrice] = useState(null);
-    const [reivews, setReviews] = useState(null);
+    const [reviews, setReviews] = useState(null);
     const [content, setContent] = useState(null);
     const [data, setData] = useState(null);
 
@@ -37,7 +37,7 @@ const RoomSingle = () => {
             max={max}
             bed={bed}
             price={price}
-            reivews={reivews}
+            reviews={reviews}
             content={content}
             data={data}
         />

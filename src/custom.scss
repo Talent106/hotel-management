@@ -21,10 +21,22 @@ $theme-colors: (
   padding: 50px;
 }
 
+.ps-300 {
+  padding-left: 300px;
+}
+
+.pe-300 {
+  padding-right: 300px;
+}
+
 // flex
 .flex-d {
   display: flex;
   flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 // color
