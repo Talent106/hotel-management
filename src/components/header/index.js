@@ -10,11 +10,11 @@ import './Header.scss';
 
 const Header = () => {
 	const [active, setActive] = useState("/");
-	// const navigate = useNavigate();
+	const navigate = useNavigate();
 
 	const handleNav = (e) => {
 		setActive(e);
-		// navigate(e);
+		navigate(e);
 	}
 
 	return (
