@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import queryFormat from "querystring";
-import _ from "loadash";
+import _ from "lodash";
 import Room from "../components/Room";
 
 const RoomSingle = (props) => {
 
     useEffect(() => {
-        const params = queryFormat
+        const params = queryFormat.parse(props.location.search);
+        console("wwwwwww", params);
     }, []);
 
     return (
