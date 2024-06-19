@@ -13,37 +13,16 @@ import Users from "./views/Users";
 import Register from "./views/auth/Register";
 import Login from "./views/auth/Login";
 
-const publicRouter = createBrowserRouter(createRoutesFromElements([
-	{
-		element: <LandingPageLayout />,
-		children: [
-			{
-				path: '/',
-				element: <Home />
-			},
-			{
-				path: '/login',
-				element: <Login />
-			},
-			{
-				path: '/register',
-				element: <Register />
-			},
-			{
-				path: '/rooms',
-				element: <Rooms />
-			},
-			{
-				path: '/services',
-				element: <Services />
-			},
-			{
-				path: '/reviews',
-				element: <Users />
-			},
-		],
-	},
-]));
+const publicRouter = createBrowserRouter(createRoutesFromElements(
+	<Route element={<LandingPageLayout />}>
+		<Route path="/" element={<Home />} />
+		<Route path="/login" element={<Login />} />
+		<Route path="/register" element={<Register />} />
+		<Route path="/rooms" element={<Rooms />} />
+		<Route path="/services" element={<Services />} />
+		<Route path="/reviews" element={<Users />} />
+	</Route>
+));
 
 const privateRouter = createBrowserRouter(
     createRoutesFromElements(

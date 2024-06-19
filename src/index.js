@@ -8,11 +8,11 @@ import './custom.scss';
 
 const { store, persistor } = storageConfig();
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
 	<Provider store={store}>
-	  	<PersistGate loading={null} persistor={persistor}>
+		<PersistGate loading={null} persistor={persistor}>
 			<App />
-	  	</PersistGate>
-	</Provider>,
-	document.getElementById('root')
+		</PersistGate>
+	</Provider>
 );
