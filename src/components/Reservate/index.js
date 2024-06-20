@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Carouselfade from "../carousel/CarouselSlow";
 import Stars from "../Stars";
@@ -96,7 +97,13 @@ const Reservate = ({
                             <h3 className="text-yellow w-50 d-flex align-center justify-end">${Number(price) + 50}</h3>
                         </div>
                     </div>
-                    
+                    <Button
+                        className="mt-4 ms-2"
+                        variant="outline-warning"
+                    >
+                        <i class="bi bi-stopwatch-fill me-2"></i>
+                        Continue
+                    </Button>
                 </div>
             </div>
         </div>
