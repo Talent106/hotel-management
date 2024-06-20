@@ -6,6 +6,7 @@ import AllRooms from "../constracts/AllRooms";
 
 const RoomSingle = () => {
     const params = useLocation().search;
+    const [id, setId] = useState(null);
     const [name, setName] = useState(null);
     const [img, setImg] = useState(null);
     const [max, setMax] = useState(null);
@@ -19,6 +20,7 @@ const RoomSingle = () => {
         const query = new URLSearchParams(params);
         if (query.get('ID')) {
             let room = _.find(AllRooms, function(o) { return o.id == query.get('ID'); });
+            setId(room.id);
             setName(room.name);
             setImg(room.src);
             setMax(room.max);
@@ -32,6 +34,7 @@ const RoomSingle = () => {
 
     return (
         <Room
+            id={id}
             name={name}
             img={img}
             max={max}

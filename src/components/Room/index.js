@@ -1,12 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button';
 import Carouselfade from "../carousel/CarouselSlow";
 import Stars from "../Stars";
 import './Room.scss';
 
 const Room = ({
-    name, reviews, content, data
+    name, reviews, content, data, id
 }) => {
+    const navigate = useNavigate();
 
     return (
         <div className="room">
@@ -17,6 +20,16 @@ const Room = ({
 
             <div className="d-flex justify-center w-100">
                 <Carouselfade slide1={data.img1} slide2={data.img2} slide3={data.img3} />
+            </div>
+            <div className="d-flex justify-center p-50">
+                <Button
+                    className="mt-4 ms-2"
+                    variant="outline-warning"
+                    onClick={() => navigate(`/reservation?ID=${id}`)}
+                >
+                    <i class="bi bi-stopwatch-fill me-2"></i>
+                    Reservation
+                </Button>
             </div>
         </div>
     )
