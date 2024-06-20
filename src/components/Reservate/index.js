@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'react-bootstrap/Image';
 import Carouselfade from "../carousel/CarouselSlow";
 import Stars from "../Stars";
-import './Room.scss';
+import './Reservate.scss';
 
 const Reservate = ({
     name, img, max, bed, price, reviews, content, data
