@@ -33,6 +33,19 @@ $theme-colors: (
   padding-right: 300px;
 }
 
+.custom-btn {
+  border: 2px solid #181818;
+  border-radius: 2% 2%;
+  padding: 20px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #fcf52b;
+    border-radius: 2% 2%;
+    padding: 20px;
+  }
+}
+
 // flex
 .flex-d {
   display: flex;
@@ -45,6 +58,10 @@ $theme-colors: (
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 // color
