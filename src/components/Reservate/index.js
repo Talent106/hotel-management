@@ -43,9 +43,17 @@ const Reservate = ({
 
     const handleReservate = () => {
         if (startDate && endDate && adults && children && prices) {
-
+            if (max < adults) {
+                toast.warning(`Sorry, this room's limite is ${max}`);
+            }
+            const firstDate = new Date(endDate);
+            const lastDate = new Date(startDate);
+            let times = firstDate.getTime() - lastDate.getTime();
+            let days = Math.round(times / (1000 * 3600 * 24));
+            let count = Number(adults) * Number(prices) * Number(days);
+            setSum(count);
         } else {
-            toast.warning("Please check your values");
+            toast.error("Please check your values");
         }
     }
 
@@ -57,79 +65,116 @@ const Reservate = ({
 
             <div className="d-flex w-100">
                 <Carouselfade slide1={data.img1} slide2={data.img2} slide3={data.img3} />
-                <div className="flex-d p-50 snow w-100">
-                    <Form className="d-flex mb-4 align-center">
-                        <i class="bi bi-calendar-week-fill me-3"></i>
-                        <DatePicker
-                            className="me-2"
-                            selected={startDate}
-                            selectsStart
-                            startDate={startDate}
-                            endDate={endDate}
-                            onChange={handleChangeStart}
-                        />
-                        <DatePicker
-                            selected={endDate}
-                            selectsEnd
-                            startDate={startDate}
-                            endDate={endDate}
-                            onChange={handleChangeEnd}
-                        />
-                    </Form>
-                    <div className="d-flex align-center mb-4">
-                        <div className="d-flex align-center me-3">
-                            <Form.Label className="me-3"><i class="bi bi-person-fill-check"></i></Form.Label>
-                            <Form.Control className="input-bg me-2" type="number" placeholder="Adults..." />
-                            <Form.Control className="input-bg" type="number" placeholder="Children..." />
-                        </div>
-                    </div>
-                    <div className="flex-d custom-btn">
-                        <Form.Check
-                            type="radio"
-                            label="FLEXIBLE RATE"
-                            name="formHorizontalRadios"
-                            id="formHorizontalRadios1"
-                        />
-                        <div className="d-flex w-100">
-                            <div className="flex-d">
-                                <p className="ms-4 mt-2"><i class="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
-                                <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
+                <div className="flex-d p-50 snow w-100 justify-center">
+                    {!sum ?
+                        <>
+                            <Form className="d-flex mb-4 align-center">
+                            <i class="bi bi-calendar-week-fill me-3"></i>
+                            <DatePicker
+                                className="me-2"
+                                selected={startDate}
+                                selectsStart
+                                startDate={startDate}
+                                endDate={endDate}
+                                onChange={handleChangeStart}
+                            />
+                            <DatePicker
+                                selected={endDate}
+                                selectsEnd
+                                startDate={startDate}
+                                endDate={endDate}
+                                onChange={handleChangeEnd}
+                            />
+                        </Form>
+                        <div className="d-flex align-center mb-4">
+                            <div className="d-flex align-center me-3">
+                                <Form.Label className="me-3"><i class="bi bi-person-fill-check"></i></Form.Label>
+                                    <Form.Control
+                                        className="input-bg me-2"
+                                        type="number"
+                                        placeholder="Adults..."
+                                        onChange={(e) => setAdults(e.target.value)}
+                                    />
+                                    <Form.Control
+                                        className="input-bg"
+                                        type="number"
+                                        placeholder="Children..."
+                                        onChange={(e) => setChildren(e.target.value)}
+                                    />
+                                </div>
                             </div>
-                            <h3 className="text-yellow w-50 d-flex align-center justify-end">${price}</h3>
-                        </div>
-                    </div>
-                    <div className="flex-d mt-4 custom-btn">
-                        <Form.Check
-                            type="radio"
-                            label="FLEXIBLE RATE - BED AND BREAKFAST"
-                            name="formHorizontalRadios"
-                            id="formHorizontalRadios2"
-                        />
-                        <div className="d-flex w-100">
-                            <div className="flex-d">
-                                <p className="ms-4 mt-2"><i class="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
-                                <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
-                                <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>Breakfast included</p>
+                            <div className="flex-d custom-btn">
+                                <Form.Check
+                                    type="radio"
+                                    label="FLEXIBLE RATE"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios1"
+                                    onClick={() => setPrices(Number(price))}
+                                />
+                                <div className="d-flex w-100">
+                                    <div className="flex-d">
+                                        <p className="ms-4 mt-2"><i class="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
+                                        <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
+                                    </div>
+                                    <h3 className="text-yellow w-50 d-flex align-center justify-end">${price}</h3>
+                                </div>
                             </div>
-                            <h3 className="text-yellow w-50 d-flex align-center justify-end">${Number(price) + 50}</h3>
-                        </div>
-                    </div>
-                    <Button
-                        className="mt-4 ms-2"
-                        variant="outline-warning"
-                        onClick={handleReservate}
-                    >
-                        <i class="bi bi-stopwatch-fill me-2"></i>
-                        Continue
-                    </Button>
-                    <Button
-                        className="mt-4 ms-2"
-                        variant="outline-info"
-                        onClick={() => navigate("/rooms")}
-                    >
-                        <i class="bi bi-back me-2"></i>
-                        Back
-                    </Button>
+                            <div className="flex-d mt-4 custom-btn">
+                                <Form.Check
+                                    type="radio"
+                                    label="FLEXIBLE RATE - BED AND BREAKFAST"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios2"
+                                    onClick={() => setPrices(Number(price) + 50)}
+                                />
+                                <div className="d-flex w-100">
+                                    <div className="flex-d">
+                                        <p className="ms-4 mt-2"><i class="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
+                                        <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
+                                        <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>Breakfast included</p>
+                                    </div>
+                                    <h3 className="text-yellow w-50 d-flex align-center justify-end">${Number(price) + 50}</h3>
+                                </div>
+                            </div>
+                            <Button
+                                className="mt-4 ms-2"
+                                variant="outline-warning"
+                                onClick={handleReservate}
+                            >
+                                <i class="bi bi-stopwatch-fill me-2"></i>
+                                Continue
+                            </Button>
+                            <Button
+                                className="mt-4 ms-2"
+                                variant="outline-info"
+                                onClick={() => navigate("/rooms")}
+                            >
+                                <i class="bi bi-back me-2"></i>
+                                Back
+                            </Button>
+                        </>
+                        :
+                        <>
+                            <div className="d-flex align-center justify-center">
+                                Total Price: <h3 className="ms-3 text-yellow">${sum}</h3>
+                            </div>
+                            <Button
+                                className="mt-4 ms-2"
+                                variant="outline-success"
+                            >
+                                <i class="bi bi-patch-check-fill me-2"></i>
+                                Submit
+                            </Button>
+                            <Button
+                                className="mt-4 ms-2"
+                                variant="outline-info"
+                                onClick={() => setSum("")}
+                            >
+                                <i class="bi bi-back me-2"></i>
+                                Back
+                            </Button>
+                        </>
+                    }
                     <ToastContainer />
                 </div>
             </div>
