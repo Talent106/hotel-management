@@ -1,8 +1,11 @@
 import React from "react";
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 import Carouselfade from "../carousel/CarouselSlow";
 import Stars from "../Stars";
+import 'react-datepicker/dist/react-datepicker.css';
 import './Reservate.scss';
 
 const Reservate = ({
