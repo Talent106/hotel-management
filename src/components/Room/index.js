@@ -5,7 +5,7 @@ import Stars from "../Stars";
 import './Room.scss';
 
 const Room = ({
-    name, img, max, bed, price, reviews, content, data
+    name, reviews, content, data
 }) => {
 
     return (
