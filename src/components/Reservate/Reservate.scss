@@ -6,4 +6,15 @@
     .carousel {
         width: 50%;
     }
+
+    .react-datepicker__input-container {
+        input {
+            background-color: #181818;
+            border: 1px solid #535353;
+            border-radius: 0.375rem;
+            color: snow;
+            font-size: 1rem !important;
+            padding: .375rem .75rem;
+        }
+    }
 }

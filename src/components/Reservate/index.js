@@ -40,8 +40,9 @@ const Reservate = ({
             <div className="d-flex w-100">
                 <Carouselfade slide1={data.img1} slide2={data.img2} slide3={data.img3} />
                 <div className="flex-d p-50 snow w-100">
-                    <div className="d-flex mb-4">
+                    <Form className="d-flex mb-4">
                         <DatePicker
+                            className="me-2"
                             selected={startDate}
                             selectsStart
                             startDate={startDate}
@@ -55,7 +56,7 @@ const Reservate = ({
                             endDate={endDate}
                             onChange={handleChangeEnd}
                         />
-                    </div>
+                    </Form>
                     <div className="flex-d custom-btn">
                         <Form.Check
                             type="radio"
