@@ -102,6 +102,7 @@ const Reservate = ({
                     <Button
                         className="mt-4 ms-2"
                         variant="outline-warning"
+                        onClick={handleReservate}
                     >
                         <i class="bi bi-stopwatch-fill me-2"></i>
                         Continue
