@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import AllRooms from '../constracts/AllRooms';
+import Stars from "../components/Stars";
 import './Rooms.scss';
 
 const Rooms = () => {
@@ -21,41 +22,7 @@ const Rooms = () => {
                         <Card.Text>
                             <i className="bi bi-bookmark-plus-fill" /> {item.bed}
                         </Card.Text>
-                        <Card.Text>
-                            {item.reviews == 5 &&
-                                <>
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                </>
-                            }
-                            {item.reviews == 4 &&
-                                <>
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                </>
-                            }
-                            {item.reviews == 3 &&
-                                <>
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                </>
-                            }
-                            {item.reviews == 2 &&
-                                <>
-                                    <i className="bi bi-star-fill text-yellow" />
-                                    <i className="bi bi-star-fill text-yellow" />
-                                </>
-                            }
-                            {item.reviews == 1 &&
-                                <i className="bi bi-star-fill text-yellow" />
-                            }
-                        </Card.Text>
+                        <Stars reviews={item.reviews} />
                         <Card.Text>
                             From <span className="f-arial f-25 text-primary">${item.price}</span>
                             <p>Fees and taxes included</p>
