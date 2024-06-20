@@ -40,7 +40,8 @@ const Reservate = ({
             <div className="d-flex w-100">
                 <Carouselfade slide1={data.img1} slide2={data.img2} slide3={data.img3} />
                 <div className="flex-d p-50 snow w-100">
-                    <Form className="d-flex mb-4">
+                    <Form className="d-flex mb-4 align-center">
+                        <i class="bi bi-calendar-week-fill me-3"></i>
                         <DatePicker
                             className="me-2"
                             selected={startDate}
@@ -57,6 +58,13 @@ const Reservate = ({
                             onChange={handleChangeEnd}
                         />
                     </Form>
+                    <div className="d-flex align-center mb-4">
+                        <div className="d-flex align-center me-3">
+                            <Form.Label className="me-3"><i class="bi bi-person-fill-check"></i></Form.Label>
+                            <Form.Control className="input-bg me-2" type="number" placeholder="Adults..." />
+                            <Form.Control className="input-bg" type="number" placeholder="Children..." />
+                        </div>
+                    </div>
                     <div className="flex-d custom-btn">
                         <Form.Check
                             type="radio"
@@ -88,7 +96,7 @@ const Reservate = ({
                             <h3 className="text-yellow w-50 d-flex align-center justify-end">${Number(price) + 50}</h3>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
         </div>

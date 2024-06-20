@@ -46,6 +46,12 @@ $theme-colors: (
   }
 }
 
+.input-bg {
+  background-color: #181818 !important;
+  border-color: #535353 !important;
+  color: snow !important;
+}
+
 // flex
 .flex-d {
   display: flex;
