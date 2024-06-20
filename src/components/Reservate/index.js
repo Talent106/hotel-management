@@ -42,16 +42,18 @@ const Reservate = ({
     const handleChangeEnd = (date) => handleChange({ end: date });
 
     const handleReservate = () => {
-        if (startDate && endDate && adults && children && prices) {
+        if (startDate && endDate && adults && prices) {
             if (max < adults) {
                 toast.warning(`Sorry, this room's limite is ${max}`);
+            } else {
+                const firstDate = new Date(endDate);
+                const lastDate = new Date(startDate);
+                let times = firstDate.getTime() - lastDate.getTime();
+                let days = Math.round(times / (1000 * 3600 * 24));
+                days = Number(days) + 1;
+                let count = Number(adults) * Number(prices) * Number(days);
+                setSum(count);
             }
-            const firstDate = new Date(endDate);
-            const lastDate = new Date(startDate);
-            let times = firstDate.getTime() - lastDate.getTime();
-            let days = Math.round(times / (1000 * 3600 * 24));
-            let count = Number(adults) * Number(prices) * Number(days);
-            setSum(count);
         } else {
             toast.error("Please check your values");
         }
