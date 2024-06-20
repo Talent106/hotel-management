@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import classNames from "classnames";
@@ -23,9 +25,14 @@ const Header = () => {
 			<img className="logo" src={Logo} />
 			<img className="logo" src={Logo1} />
 			<div className="auth">
-				<a href="/login" className=""><i className="bi-lock-fill me-2"/>Login</a>
+				<a href="/login" className="me-2"><i className="bi-lock-fill me-2"/>Login</a>
 				<a>|</a>
-				<a href="/register" className=""><i className="bi-person-fill-add me-2"/>Sign UP</a>
+				<a href="/register" className="ms-2 me-2"><i className="bi-person-fill-add me-2"/>Sign UP</a>
+				<a>|</a>
+				<DropdownButton className="ms-2" id="dropdown-basic-button" title="Language">
+					<Dropdown.Item>EN</Dropdown.Item>
+					<Dropdown.Item>GE</Dropdown.Item>
+				</DropdownButton>
 			</div>
 		</div>
 

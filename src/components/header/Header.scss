@@ -24,8 +24,15 @@
             justify-content: center;
             align-items: center;
 
+            .dropdown-menu.show {
+                background-color: #181818;
+            }
+
+            .dropdown-item {
+                background-color: #181818;
+            }
+
             a {
-                margin: 5px;
                 color: white;
                 text-decoration: none;
 
