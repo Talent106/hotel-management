@@ -24,8 +24,25 @@
             justify-content: center;
             align-items: center;
 
+            .dropdown-menu.show {
+                background-color: black;
+            }
+
+            .dropdown-item {
+                background-color: black;
+
+                &:hover {
+                    background-color: #181818;
+                    color: yellow;
+                }
+            }
+
+            .btn-primary {
+                background-color: black;
+                border-color: black;
+            }
+
             a {
-                margin: 5px;
                 color: white;
                 text-decoration: none;
 
@@ -42,22 +59,32 @@
         align-items: center;
         background: #222222;
         padding-right: 80px;
-        height: 60px;
+        height: 65px;
 
         .menu-btn {
+            display: flex;
+
             a {
+                border-bottom: solid 4px #222222;
                 color: white;
                 font-size: 18px;
                 font-family: Trajan Pro;
                 text-decoration: none;
                 padding: 17px;
+
+                &:hover {
+                    background: #181818;
+                    border-bottom: solid 4px yellow;
+                    color: yellow;
+                    padding: 17px;
+                }
             }
 
-            a:hover {
+            .active {
                 background: #181818;
+                border-bottom: solid 4px yellow;
                 color: yellow;
                 padding: 17px;
-                border-bottom: solid 4px yellow;
             }
         }
 

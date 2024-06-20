@@ -6,17 +6,77 @@ a {
   font-family: sans-serif;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 $theme-colors: (
   'primary': rgb(68, 5, 67),
   'success': green,
   'danger': #e80303,
+<<<<<<< HEAD
   'info': rgb(0, 224, 227)
+=======
+  'info': rgb(0, 251, 255),
+  'warning': rgb(221, 255, 0)
+>>>>>>> main
 );
+
+.w-50 {
+  width: 50%;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.p-300 {
+  padding: 300px;
+}
+
+.ps-300 {
+  padding-left: 300px;
+}
+
+.pe-300 {
+  padding-right: 300px;
+}
+
+.custom-btn {
+  border: 2px solid #181818;
+  border-radius: 2% 2%;
+  padding: 20px;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #fcf52b;
+    border-radius: 2% 2%;
+    padding: 20px;
+  }
+}
+
+.input-bg {
+  background-color: #181818 !important;
+  border-color: #535353 !important;
+  color: snow !important;
+}
 
 // flex
 .flex-d {
   display: flex;
   flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 // color

@@ -2,10 +2,31 @@
     display: flex;
     flex-direction: column;
 
+    .cta-bg {
+        background: url('../assets/services/banner.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        height: 500px;
+        position: relative;
+    }
+
     .goulty {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #181818;
+
+        .carousel {
+            width: 50%;
+        }
+    }
+
+    .border-top-snow {
+        border-top: 1px solid snow;
+    }
+
+    .border-right-snow {
+        border-right: 1px solid snow;
     }
 }

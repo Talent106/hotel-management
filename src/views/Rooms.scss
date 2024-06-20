@@ -1,16 +1,23 @@
-.ebooks {
+.e-room {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     background: #5e5d5d;
-    padding: 280px 40px 40px 40px;
+    padding: 250px 40px 40px 40px;
 
-    .card-title {
-        color: rgb(97, 7, 96);
-    }
+    .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
 
-    .card {
-        margin: 20px;
+        .card-title {
+            color: rgb(97, 7, 96);
+        }
+    
+        .card {
+            margin: 20px;
+        }
     }
 }
