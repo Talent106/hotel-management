@@ -59,8 +59,8 @@ const Landing = () => {
 
             <div className="rooms">
                 <div className="room-card">
-                    {Rooms.map((item) =>
-                        <Card style={{ width: '25rem', height: '25rem' }}>
+                    {Rooms.map((item, index) =>
+                        <Card style={{ width: '25rem', height: '25rem' }} key={item.src + index}>
                             <Card.Img className="pointer" variant="top" src={item.src} onClick={() => navigate(item.url)} />
                         </Card>
                     )}

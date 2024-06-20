@@ -43,8 +43,9 @@ const Header = () => {
 
 		<div className="menu">
 			<div className="menu-btn">
-				{Menu.map(item => (
+				{Menu.map((item, index) => (
 					<Nav.Link
+						key={item.url + index}
 						className={classNames(active == item.url && "active")}
 						onClick={() => handleNav(item.url)}
 					>

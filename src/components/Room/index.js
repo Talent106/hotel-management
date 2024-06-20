@@ -27,7 +27,7 @@ const Room = ({
                     variant="outline-warning"
                     onClick={() => navigate(`/reservation?ID=${id}`)}
                 >
-                    <i class="bi bi-stopwatch-fill me-2"></i>
+                    <i className="bi bi-stopwatch-fill me-2"></i>
                     Reservation
                 </Button>
                 <Button
@@ -35,7 +35,7 @@ const Room = ({
                     variant="outline-info"
                     onClick={() => navigate("/rooms")}
                 >
-                    <i class="bi bi-back me-2"></i>
+                    <i className="bi bi-back me-2"></i>
                     Back
                 </Button>
             </div>

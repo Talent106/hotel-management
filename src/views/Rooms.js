@@ -16,19 +16,19 @@ const Rooms = () => {
                     className="me-4"
                     variant="outline-warning"
                 >
-                    <i class="bi bi-sort-alpha-down me-2"></i>Alpha
+                    <i className="bi bi-sort-alpha-down me-2"></i>Alpha
                 </Button>
                 <Button
                     className="ms-4"
                     variant="outline-info"
                 >
-                    <i class="bi bi-sort-numeric-down me-2"></i>Price
+                    <i className="bi bi-sort-numeric-down me-2"></i>Price
                 </Button>
             </div>
             <hr className="snow w-100 mb-4" />
             <div className="gallery">
-                {AllRooms.map((item) =>
-                    <Card style={{ width: '20rem' }}>
+                {AllRooms.map((item, index) =>
+                    <Card style={{ width: '20rem' }} key={index}>
                         <Card.Img variant="top" src={item.src} />
                         <Card.Body>
                             <Card.Title>{item.name}</Card.Title>
@@ -49,14 +49,14 @@ const Rooms = () => {
                                     variant="primary"
                                     onClick={() => navigate(`/room?ID=${item.id}`)}
                                 >
-                                    <i class="bi bi-eye-fill me-2"></i>View Details
+                                    <i className="bi bi-eye-fill me-2"></i>View Details
                                 </Button>
                                 <Button
                                     className="ms-2"
                                     variant="success"
                                     onClick={() => navigate(`/reservation?ID=${item.id}`)}
                                 >
-                                    <i class="bi bi-stopwatch-fill me-2"></i>Reservation
+                                    <i className="bi bi-stopwatch-fill me-2"></i>Reservation
                                 </Button>
                             </div>
                         </Card.Body>

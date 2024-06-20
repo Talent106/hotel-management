@@ -71,7 +71,7 @@ const Reservate = ({
                     {!sum ?
                         <>
                             <Form className="d-flex mb-4 align-center">
-                            <i class="bi bi-calendar-week-fill me-3"></i>
+                            <i className="bi bi-calendar-week-fill me-3"></i>
                             <DatePicker
                                 className="me-2"
                                 selected={startDate}
@@ -90,7 +90,7 @@ const Reservate = ({
                         </Form>
                         <div className="d-flex align-center mb-4">
                             <div className="d-flex align-center me-3">
-                                <Form.Label className="me-3"><i class="bi bi-person-fill-check"></i></Form.Label>
+                                <Form.Label className="me-3"><i className="bi bi-person-fill-check"></i></Form.Label>
                                     <Form.Control
                                         className="input-bg me-2"
                                         type="number"
@@ -115,8 +115,8 @@ const Reservate = ({
                                 />
                                 <div className="d-flex w-100">
                                     <div className="flex-d">
-                                        <p className="ms-4 mt-2"><i class="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
-                                        <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
+                                        <p className="ms-4 mt-2"><i className="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
+                                        <p className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
                                     </div>
                                     <h3 className="text-yellow w-50 d-flex align-center justify-end">${price}</h3>
                                 </div>
@@ -131,9 +131,9 @@ const Reservate = ({
                                 />
                                 <div className="d-flex w-100">
                                     <div className="flex-d">
-                                        <p className="ms-4 mt-2"><i class="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
-                                        <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
-                                        <p className="ms-4"><i class="bi bi-check-circle-fill me-3"></i>Breakfast included</p>
+                                        <p className="ms-4 mt-2"><i className="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
+                                        <p className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
+                                        <p className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>Breakfast included</p>
                                     </div>
                                     <h3 className="text-yellow w-50 d-flex align-center justify-end">${Number(price) + 50}</h3>
                                 </div>
@@ -143,7 +143,7 @@ const Reservate = ({
                                 variant="outline-warning"
                                 onClick={handleReservate}
                             >
-                                <i class="bi bi-stopwatch-fill me-2"></i>
+                                <i className="bi bi-stopwatch-fill me-2"></i>
                                 Continue
                             </Button>
                             <Button
@@ -151,7 +151,7 @@ const Reservate = ({
                                 variant="outline-info"
                                 onClick={() => navigate("/rooms")}
                             >
-                                <i class="bi bi-back me-2"></i>
+                                <i className="bi bi-back me-2"></i>
                                 Back
                             </Button>
                         </>
@@ -164,7 +164,7 @@ const Reservate = ({
                                 className="mt-4 ms-2"
                                 variant="outline-success"
                             >
-                                <i class="bi bi-patch-check-fill me-2"></i>
+                                <i className="bi bi-patch-check-fill me-2"></i>
                                 Submit
                             </Button>
                             <Button
@@ -172,7 +172,7 @@ const Reservate = ({
                                 variant="outline-info"
                                 onClick={() => setSum("")}
                             >
-                                <i class="bi bi-back me-2"></i>
+                                <i className="bi bi-back me-2"></i>
                                 Back
                             </Button>
                         </>
