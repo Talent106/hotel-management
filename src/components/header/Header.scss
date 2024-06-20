@@ -25,11 +25,21 @@
             align-items: center;
 
             .dropdown-menu.show {
-                background-color: #181818;
+                background-color: black;
             }
 
             .dropdown-item {
-                background-color: #181818;
+                background-color: black;
+
+                &:hover {
+                    background-color: #181818;
+                    color: yellow;
+                }
+            }
+
+            .btn-primary {
+                background-color: black;
+                border-color: black;
             }
 
             a {

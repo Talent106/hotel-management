@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import classNames from "classnames";
@@ -29,10 +29,15 @@ const Header = () => {
 				<a>|</a>
 				<a href="/register" className="ms-2 me-2"><i className="bi-person-fill-add me-2"/>Sign UP</a>
 				<a>|</a>
-				<DropdownButton className="ms-2" id="dropdown-basic-button" title="Language">
-					<Dropdown.Item>EN</Dropdown.Item>
-					<Dropdown.Item>GE</Dropdown.Item>
-				</DropdownButton>
+				<Dropdown className="ms-2" as={ButtonGroup}>
+					<Dropdown.Toggle id="dropdown-custom-1">
+						<i className="bi bi-translate me-2"/>
+					</Dropdown.Toggle>
+					<Dropdown.Menu>
+						<Dropdown.Item>EN</Dropdown.Item>
+						<Dropdown.Item>GE</Dropdown.Item>
+					</Dropdown.Menu>
+				</Dropdown>
 			</div>
 		</div>
 
