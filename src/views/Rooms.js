@@ -27,12 +27,22 @@ const Rooms = () => {
                             From <span className="f-arial f-25 text-primary">${item.price}</span>
                             <p>Fees and taxes included</p>
                         </Card.Text>
-                        <Button
-                            variant="primary"
-                            onClick={() => navigate(`/room?ID=${item.id}`)}
-                        >
-                            View Details
-                        </Button>
+                        <div className="d-flex">
+                            <Button
+                                className="me-2"
+                                variant="primary"
+                                onClick={() => navigate(`/room?ID=${item.id}`)}
+                            >
+                                <i class="bi bi-eye-fill me-2"></i>View Details
+                            </Button>
+                            <Button
+                                className="ms-2"
+                                variant="success"
+                                onClick={() => navigate(`/reservation?ID=${item.id}`)}
+                            >
+                                <i class="bi bi-stopwatch-fill me-2"></i>Reservation
+                            </Button>
+                        </div>
                     </Card.Body>
                 </Card>
             )}
