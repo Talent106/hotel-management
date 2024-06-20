@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DatePicker from 'react-datepicker';
+import { toast, ToastContainer } from "react-toastify";
 import moment from 'moment';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
@@ -8,6 +9,7 @@ import Form from 'react-bootstrap/Form';
 import Carouselfade from "../carousel/CarouselSlow";
 import Stars from "../Stars";
 import 'react-datepicker/dist/react-datepicker.css';
+import "react-toastify/dist/ReactToastify.css";
 import './Reservate.scss';
 
 const Reservate = ({
@@ -15,6 +17,11 @@ const Reservate = ({
 }) => {
     const [startDate, setStartDate] = useState(moment().format("MM/DD/YYYY"));
     const [endDate, setEndDate] = useState(moment().format("MM/DD/YYYY"));
+    const [adults, setAdults] = useState(null);
+    const [children, setChildren] = useState(null);
+    const [prices, setPrices] = useState(null);
+    const [sum, setSum] = useState(null);
+
     const navigate = useNavigate();
 
     const handleChange = ({ start, end }) => {
@@ -33,6 +40,14 @@ const Reservate = ({
     const handleChangeStart = (date) => handleChange({ start: date });
 
     const handleChangeEnd = (date) => handleChange({ end: date });
+
+    const handleReservate = () => {
+        if (startDate && endDate && adults && children && prices) {
+
+        } else {
+            toast.warning("Please check your values");
+        }
+    }
 
     return (
         <div className="reservate">
@@ -115,6 +130,7 @@ const Reservate = ({
                         <i class="bi bi-back me-2"></i>
                         Back
                     </Button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>
