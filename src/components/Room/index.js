@@ -23,12 +23,20 @@ const Room = ({
             </div>
             <div className="d-flex justify-center p-50">
                 <Button
-                    className="mt-4 ms-2"
+                    className="mt-4 me-4"
                     variant="outline-warning"
                     onClick={() => navigate(`/reservation?ID=${id}`)}
                 >
                     <i class="bi bi-stopwatch-fill me-2"></i>
                     Reservation
+                </Button>
+                <Button
+                    className="mt-4 ms-4"
+                    variant="outline-info"
+                    onClick={() => navigate("/rooms")}
+                >
+                    <i class="bi bi-back me-2"></i>
+                    Back
                 </Button>
             </div>
         </div>

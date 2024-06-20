@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import Image from 'react-bootstrap/Image';
@@ -14,6 +15,7 @@ const Reservate = ({
 }) => {
     const [startDate, setStartDate] = useState(moment().format("MM/DD/YYYY"));
     const [endDate, setEndDate] = useState(moment().format("MM/DD/YYYY"));
+    const navigate = useNavigate();
 
     const handleChange = ({ start, end }) => {
         const newStartDate = start ? moment(start).format("MM/DD/YYYY") : startDate;
@@ -103,6 +105,14 @@ const Reservate = ({
                     >
                         <i class="bi bi-stopwatch-fill me-2"></i>
                         Continue
+                    </Button>
+                    <Button
+                        className="mt-4 ms-2"
+                        variant="outline-info"
+                        onClick={() => navigate("/rooms")}
+                    >
+                        <i class="bi bi-back me-2"></i>
+                        Back
                     </Button>
                 </div>
             </div>
