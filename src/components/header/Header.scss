@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background: #e4d102;
+    background: #5000c1;
     height: 160px;
     position: fixed;
     width: 100%;
@@ -25,21 +25,21 @@
             align-items: center;
 
             .dropdown-menu.show {
-                background-color: #e4d102;
+                background-color: #5000c1;
             }
 
             .dropdown-item {
-                background-color: #e4d102;
+                background-color: #5000c1;
 
                 &:hover {
-                    background-color: #c2b200;
+                    background-color: #3c0090;
                     color: yellow;
                 }
             }
 
             .btn-primary {
-                background-color: #e4d102;
-                border-color: #e4d102;
+                background-color: #5000c1;
+                border-color: #5000c1;
             }
 
             a {
@@ -57,7 +57,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: #cdb800;
+        background: rgb(87, 1, 209);
         padding-right: 80px;
         height: 65px;
 
@@ -65,7 +65,7 @@
             display: flex;
 
             a {
-                border-bottom: solid 4px #7f7200;
+                border-bottom: solid 4px #5000c1;
                 color: white;
                 font-size: 18px;
                 font-family: Trajan Pro;
@@ -73,15 +73,15 @@
                 padding: 17px;
 
                 &:hover {
-                    background: #d1bd04;
-                    border-bottom: solid 4px yellow;
+                    background: #5000c1;
+                    border-bottom: solid 4px #5000c1;
                     color: yellow;
                     padding: 17px;
                 }
             }
 
             .active {
-                background: #7a7a00;
+                background: #5000c1;
                 border-bottom: solid 4px yellow;
                 color: yellow;
                 padding: 17px;
@@ -96,7 +96,7 @@
             font-family: Trajan;
 
             .form-control {
-                background-color: #cdb800;
+                background-color: #5000c1;
                 border-top: 0ch;
                 border-left: 0ch;
                 border-right: 0ch;
