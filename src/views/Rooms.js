@@ -60,37 +60,39 @@ const Rooms = () => {
 
             {filter == 2 ?
                 <div className="d-flex w-100">
-                    <div className="flex-d w-30 snow p-4">
-                        <p>Filter By:</p>
-                        <div className="d-flex w-100 justify-between">
+                    <div className="flex-d w-30 snow">
+                        <div className="position w-20 p-50">
+                            <p>Filter By:</p>
+                            <div className="d-flex w-100 justify-between">
+                                <Form.Check
+                                    className="mb-3"
+                                    label="5 stars"
+                                    name="group1"
+                                    checked={check5}
+                                    onChange={() => handleCheck(5)}
+                                />
+                                <span>{star_5}</span>
+                            </div>
+                            <div className="d-flex w-100 justify-between">
+                                <Form.Check
+                                    className="mb-3"
+                                    label="4 stars"
+                                    name="group1"
+                                    checked={check4}
+                                    onChange={() => handleCheck(4)}
+                                />
+                                <span>{star_4}</span>
+                            </div>
                             <Form.Check
                                 className="mb-3"
-                                label="5 stars"
+                                label="max"
                                 name="group1"
-                                checked={check5}
-                                onChange={() => handleCheck(5)}
                             />
-                            <span>{star_5}</span>
+                            <>
+                                <Form.Label>Price Range</Form.Label>
+                                <Form.Range />
+                            </>
                         </div>
-                        <div className="d-flex w-100 justify-between">
-                            <Form.Check
-                                className="mb-3"
-                                label="4 stars"
-                                name="group1"
-                                checked={check4}
-                                onChange={() => handleCheck(4)}
-                            />
-                            <span>{star_4}</span>
-                        </div>
-                        <Form.Check
-                            className="mb-3"
-                            label="max"
-                            name="group1"
-                        />
-                        <>
-                            <Form.Label>Price Range</Form.Label>
-                            <Form.Range />
-                        </>
                     </div>
                     <div className="flex-d w-70 p-4">
                         {all_Rooms.map((item, index) =>
