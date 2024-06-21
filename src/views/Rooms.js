@@ -81,7 +81,7 @@ const Rooms = () => {
                                 <Image className="w-30 me-3" src={item.src} rounded/>
                                 <div className="flex-d w-70">
                                     <h3 className="text-yellow">{item.name}</h3>
-                                    <Stars reviews={item.reviews} />
+                                    <Stars reviews={item.reviews} center={false} />
                                 </div>
                             </div>
                         )}
@@ -100,7 +100,7 @@ const Rooms = () => {
                                 <Card.Text>
                                     <i className="bi bi-bookmark-plus-fill" /> {item.bed}
                                 </Card.Text>
-                                <Stars reviews={item.reviews} />
+                                <Stars reviews={item.reviews} center={true} />
                                 <Card.Text>
                                     From <span className="f-arial f-25 text-primary">${item.price}</span>
                                     <p>Fees and taxes included</p>

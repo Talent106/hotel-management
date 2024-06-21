@@ -15,7 +15,7 @@ const Room = ({
         <div className="room">
             <Image className="w-100" src={data.img4} />
             <h1 className="text-yellow text-center pt-4">{name}</h1>
-            <Stars reviews={reviews} />
+            <Stars reviews={reviews} center={true} />
             <p className="text-center ps-300 pe-300 f-25 snow">{content}</p>
 
             <div className="d-flex justify-center w-100">
