@@ -18,8 +18,16 @@ $theme-colors: (
   'warning': rgb(221, 255, 0)
 );
 
+.w-30 {
+  width: 30%;
+}
+
 .w-50 {
   width: 50%;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .p-50 {
@@ -73,6 +81,10 @@ $theme-colors: (
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 // color
