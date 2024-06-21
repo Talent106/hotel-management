@@ -43,7 +43,7 @@ const FilterButton = ({ onAlpha, onPrice, onFilter, filter }) => (
                 variant="danger"
                 onClick={onFilter}
             >
-                <i class="bi bi-funnel-fill me-2"></i>Filter
+                <i className="bi bi-funnel-fill me-2"></i>Filter
             </Button>
             :
             <Button
@@ -51,7 +51,7 @@ const FilterButton = ({ onAlpha, onPrice, onFilter, filter }) => (
                 variant="outline-danger"
                 onClick={onFilter}
             >
-                <i class="bi bi-funnel-fill me-2"></i>Filter
+                <i className="bi bi-funnel-fill me-2"></i>Filter
             </Button>
         }
     </>
