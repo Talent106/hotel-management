@@ -15,7 +15,7 @@ const Services = () => {
             <div className="goulty">
                 <Image className="image-left" src={PatterImg} />
                 <div className="p-4">
-                    <h1 className="text-yellow">Area</h1>
+                    <h1 className="text-yellow">Food</h1>
                     <p className="snow">At the base of the Kotelnica Białczańska ski lifts, 
                         this upscale chalet-style hotel in the Tatra Mountains is also a 5-minute 
                         walk from the Terma Bania water park complex.
