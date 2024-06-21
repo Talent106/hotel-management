@@ -5,7 +5,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import classNames from "classnames";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import Logo1 from "../../assets/logo1.png";
 import Menu from "../../constracts/Menu";
 import './Header.scss';

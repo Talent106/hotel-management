@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    background: #000000;
+    background: #e4d102;
     height: 160px;
     position: fixed;
     width: 100%;
@@ -25,21 +25,21 @@
             align-items: center;
 
             .dropdown-menu.show {
-                background-color: black;
+                background-color: #e4d102;
             }
 
             .dropdown-item {
-                background-color: black;
+                background-color: #e4d102;
 
                 &:hover {
-                    background-color: #181818;
+                    background-color: #c2b200;
                     color: yellow;
                 }
             }
 
             .btn-primary {
-                background-color: black;
-                border-color: black;
+                background-color: #e4d102;
+                border-color: #e4d102;
             }
 
             a {
@@ -57,7 +57,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: #222222;
+        background: #cdb800;
         padding-right: 80px;
         height: 65px;
 
@@ -65,7 +65,7 @@
             display: flex;
 
             a {
-                border-bottom: solid 4px #222222;
+                border-bottom: solid 4px #7f7200;
                 color: white;
                 font-size: 18px;
                 font-family: Trajan Pro;
@@ -73,7 +73,7 @@
                 padding: 17px;
 
                 &:hover {
-                    background: #181818;
+                    background: #d1bd04;
                     border-bottom: solid 4px yellow;
                     color: yellow;
                     padding: 17px;
@@ -81,7 +81,7 @@
             }
 
             .active {
-                background: #181818;
+                background: #7a7a00;
                 border-bottom: solid 4px yellow;
                 color: yellow;
                 padding: 17px;
@@ -96,7 +96,7 @@
             font-family: Trajan;
 
             .form-control {
-                background-color: #181818;
+                background-color: #cdb800;
                 border-top: 0ch;
                 border-left: 0ch;
                 border-right: 0ch;
