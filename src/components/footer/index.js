@@ -48,7 +48,7 @@ const Footer = () => (
                 </div>
             </div>
             <div className="flex-d">
-                <h3 className="snow">LION KING</h3>
+                <h3 className="snow">GOLDEN</h3>
                 <div className="d-flex mt-4">
                     <Button variant="outline-light">
                         <i className="bi bi-facebook f-30 snow" />
@@ -66,7 +66,7 @@ const Footer = () => (
             </div>
         </div>
         <div className="copyright">
-            <a>Copyright 2024 by Tatuli Shavishvili</a>
+            <a>Copyright 2024</a>
             <a>All Rights Reserved</a>
         </div>
     </div>
