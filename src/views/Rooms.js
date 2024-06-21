@@ -45,12 +45,18 @@ const Rooms = () => {
         }
     }, [check5, check4]);
 
+    const handlePrice = () => {
+        setFilter(1);
+        all_Rooms.sort((a, b) => a.price - b.price);
+        setAll_Rooms(all_Rooms);
+    }
+
     return (
         <div className="e-room">
             <div className="d-flex mb-4">
                 <FilterButton
                     onAlpha={() => setFilter(0)}
-                    onPrice={() => setFilter(1)}
+                    onPrice={handlePrice}
                     onFilter={() => setFilter(2)}
                     filter={filter}
                 />
