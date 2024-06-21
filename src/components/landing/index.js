@@ -8,7 +8,7 @@ import Slide2 from "../../assets/2.jpg";
 import Slide3 from "../../assets/3.jpg";
 import PatterImg from "../../assets/hotel.jpg";
 import GuestRoom from "../../assets/guest.jpg";
-import IntroImg from "../../assets/checkin.png";
+import IntroImg from "../../assets/checkin.jpg";
 import Rooms from "../../constracts/Rooms";
 import './Landing.scss';
 
@@ -50,9 +50,10 @@ const Landing = () => {
             <div className="introduce">
                 <Image className="image-left" src={IntroImg} rounded/>
                 <div className="pattern-text">
-                    <h1>Pet Friendly Hotel</h1>
-                    <p>We welcome guide dogs and service animals free of charge. Please enquire prior to arrival to 
-                        make arrangements for your animal. Pet Fee per night 80 PLN. 
+                    <h1>About Us</h1>
+                    <p>Occupying a modern high-rise in the city center, this upscale hotel is a 3-minute 
+                        walk from a tram stop, and a 6-minute walk from the shops and restaurants of the 
+                        Złote Tarasy complex.
                     </p>
                 </div>
             </div>
@@ -60,7 +61,7 @@ const Landing = () => {
             <div className="rooms">
                 <div className="room-card">
                     {Rooms.map((item, index) =>
-                        <Card style={{ width: '25rem', height: '25rem' }} key={item.src + index}>
+                        <Card style={{ width: '25rem', height: '15rem' }} key={item.src + index}>
                             <Card.Img className="pointer" variant="top" src={item.src} onClick={() => navigate(item.url)} />
                         </Card>
                     )}
