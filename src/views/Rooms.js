@@ -10,7 +10,7 @@ import './Rooms.scss';
 
 const Rooms = () => {
     const navigate = useNavigate();
-    const [filter, setFilter] = useState(false);
+    const [filter, setFilter] = useState(null);
     const [star_5, setStar_5] = useState(null);
     const [star_4, setStar_4] = useState(null);
 
@@ -27,29 +27,29 @@ const Rooms = () => {
                 <Button
                     className="me-4"
                     variant="outline-warning"
-                    onClick={() => setFilter(false)}
+                    onClick={() => setFilter(0)}
                 >
                     <i className="bi bi-sort-alpha-down me-2"></i>Alpha
                 </Button>
                 <Button
                     className="ms-4 me-4"
                     variant="outline-info"
-                    onClick={() => setFilter(false)}
+                    onClick={() => setFilter(1)}
                 >
                     <i className="bi bi-sort-numeric-down me-2"></i>Price
                 </Button>
                 <Button
                     className="ms-4"
-                    variant="outline-info"
-                    onClick={() => setFilter(true)}
+                    variant="outline-danger"
+                    onClick={() => setFilter(2)}
                 >
-                    <i className="bi bi-sort-numeric-down me-2"></i>Filter
+                    <i class="bi bi-funnel-fill me-2"></i>Filter
                 </Button>
             </div>
 
             <hr className="snow w-100 mb-4" />
 
-            {filter ?
+            {filter == 2 ?
                 <div className="d-flex w-100">
                     <div className="flex-d w-30 snow p-4">
                         <p>Filter By:</p>
@@ -79,9 +79,13 @@ const Rooms = () => {
                         {AllRooms.map((item, index) =>
                             <div className="d-flex w-100 p-3" key={index}>
                                 <Image className="w-30 me-3" src={item.src} rounded/>
-                                <div className="flex-d w-70">
-                                    <h3 className="text-yellow">{item.name}</h3>
+                                <div className="flex-d w-70 snow">
+                                    <h3 className="text-info">{item.name}</h3>
                                     <Stars reviews={item.reviews} center={false} />
+                                    <p><i class="bi bi-box2-fill me-2"></i>{item.bed}</p>
+                                    <p><i class="bi bi-people-fill me-2"></i>{item.max}</p>
+                                    <p><i class="bi bi-credit-card-2-back-fill me-2"></i>${item.price}</p>
+                                    <p><i class="bi bi-bookmark-fill me-2"></i>{item.content}</p>
                                 </div>
                             </div>
                         )}
