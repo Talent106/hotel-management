@@ -94,7 +94,11 @@ const Rooms = () => {
                     </div>
                     <div className="flex-d w-70 p-4">
                         {all_Rooms.map((item, index) =>
-                            <div className="d-flex w-100 p-3" key={index}>
+                            <div
+                                className="d-flex w-100 p-3 cursor"
+                                key={index}
+                                onClick={() => navigate(`/room?ID=${item.id}`)}
+                            >
                                 <Image className="w-30 me-3" src={item.src} rounded/>
                                 <div className="flex-d w-70 snow">
                                     <h3 className="text-info">{item.name}</h3>
