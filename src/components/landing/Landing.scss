@@ -8,7 +8,7 @@
     .pattern {
         display: flex;
         justify-content: flex-start;
-        background-color: #cad100;
+        background-color: #4801cc;
 
         .image-left {
             height: 600px;
@@ -23,11 +23,11 @@
             width: 50%;
 
             h1 {
-                color: rgb(255, 0, 0);
+                color: yellow;
             }
 
             p {
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
         }
     }
@@ -43,11 +43,11 @@
             padding: 50px;
 
             h1 {
-                color: rgb(255, 0, 0);
+                color: rgb(255, 251, 0);
             }
 
             p {
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
         }
     }
@@ -76,11 +76,11 @@
             padding: 50px;
 
             h1 {
-                color: rgb(255, 0, 0);
+                color: rgb(229, 255, 0);
             }
 
             p {
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
         }
     }
@@ -89,7 +89,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: #d1bc00;
+        background-color: #4801cc;
         padding: 60px;
 
         .room-card {

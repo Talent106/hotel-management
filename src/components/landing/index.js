@@ -35,7 +35,7 @@ const Landing = () => {
 
             <div className="guest">
                 <div className="guest-text">
-                    <h1>Guest Rooms</h1>
+                    <h1>ENVIERMENT</h1>
                     <p>Our individually designed rooms are inspired by the most renowned polish painters. Rooms have been 
                         furnished in the highest standards and equipped with the most hi tech devices and solutions to increase 
                         the comfort level. All rooms provide free Wi-Fi, coffee facilities, safe, minibar.
