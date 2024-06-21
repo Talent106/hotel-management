@@ -31,22 +31,19 @@ const Rooms = () => {
         } else {
             setCheck4(!check4);
         }
-        handleCheckFilter(e)
     }
 
-    const handleCheckFilter = (e) => {
-        if (check5 || check4) {
+    useEffect(() => {
+        if (check5 && check4) {
             let All_Rooms = AllRooms.filter(item => item.reviews == 5 || item.reviews == 4);
             setAll_Rooms(All_Rooms);
-            console.log("eeeeeeeee", e);
-        } else if (check4 && check5) {
-            let All_Rooms = AllRooms.filter(item => item.reviews == e);
+        } else if (check5 || check4) {
+            let All_Rooms = AllRooms.filter(item => item.reviews == check4*4 || item.reviews == check5*5);
             setAll_Rooms(All_Rooms);
-            console.log("wwwwwww", e);
         } else {
             setAll_Rooms(AllRooms);
         }
-    }
+    }, [check5, check4]);
 
     return (
         <div className="e-room">
