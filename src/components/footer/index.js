@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import Img1 from "../../assets/recent/news1.jpg";
 import Img2 from "../../assets/recent/news2.jpg";
 import './Footer.scss';
@@ -48,7 +49,7 @@ const Footer = () => (
                 </div>
             </div>
             <div className="flex-d">
-                <h3 className="snow">GOLDEN</h3>
+                <h3 className="snow">JESS HOTEL & SPA</h3>
                 <div className="d-flex mt-4">
                     <Button variant="outline-light">
                         <i className="bi bi-facebook f-30 snow" />
@@ -62,6 +63,19 @@ const Footer = () => (
                     <Button variant="outline-light">
                         <i className="bi bi-youtube f-30 snow" />
                     </Button>
+                </div>
+                <div className="flex-d mt-4">
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>Example textarea</Form.Label>
+                    <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Button variant="success">
+                    Send
+                </Button>
                 </div>
             </div>
         </div>

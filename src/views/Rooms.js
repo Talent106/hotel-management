@@ -11,7 +11,7 @@ import './Rooms.scss';
 
 const Rooms = () => {
     const navigate = useNavigate();
-    const [filter, setFilter] = useState(null);
+    const [filter, setFilter] = useState(0);
     const [star_5, setStar_5] = useState(null);
     const [star_4, setStar_4] = useState(null);
     const [check5, setCheck5] = useState(false);
@@ -33,6 +33,12 @@ const Rooms = () => {
         }
     }
 
+    const handlePrice = () => {
+        setFilter(1);
+        all_Rooms.sort((a, b) => a.price - b.price);
+        setAll_Rooms(all_Rooms);
+    }
+
     useEffect(() => {
         if (check5 && check4) {
             let All_Rooms = AllRooms.filter(item => item.reviews == 5 || item.reviews == 4);
@@ -50,7 +56,7 @@ const Rooms = () => {
             <div className="d-flex mb-4">
                 <FilterButton
                     onAlpha={() => setFilter(0)}
-                    onPrice={() => setFilter(1)}
+                    onPrice={handlePrice}
                     onFilter={() => setFilter(2)}
                     filter={filter}
                 />
@@ -116,7 +122,7 @@ const Rooms = () => {
                 </div>
                 :
                 <div className="gallery">
-                    {AllRooms.map((item, index) =>
+                    {all_Rooms.map((item, index) =>
                         <Card style={{ width: '20rem' }} key={index}>
                             <Card.Img variant="top" src={item.src} />
                             <Card.Body>
