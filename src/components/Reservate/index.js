@@ -63,7 +63,7 @@ const Reservate = ({
         <div className="reservate">
             <Image className="w-100" src={data.img4} />
             <h1 className="text-yellow text-center pt-4">{name}</h1>
-            <Stars reviews={reviews} />
+            <Stars reviews={reviews} center={true} />
 
             <div className="d-flex w-100">
                 <Carouselfade slide1={data.img1} slide2={data.img2} slide3={data.img3} />

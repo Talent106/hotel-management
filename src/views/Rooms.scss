@@ -6,6 +6,10 @@
     background: #000000;
     padding: 250px 40px 40px 40px;
 
+    .position {
+        position: fixed;
+    }
+
     .gallery {
         display: flex;
         align-items: center;
