@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import AllRooms from '../constracts/AllRooms';
 import Stars from "../components/Stars";
 import './Rooms.scss';
+import FilterButton from "../components/FilterButton";
 
 const Rooms = () => {
     const navigate = useNavigate();
@@ -24,27 +25,12 @@ const Rooms = () => {
     return (
         <div className="e-room">
             <div className="d-flex mb-4">
-                <Button
-                    className="me-4"
-                    variant="outline-warning"
-                    onClick={() => setFilter(0)}
-                >
-                    <i className="bi bi-sort-alpha-down me-2"></i>Alpha
-                </Button>
-                <Button
-                    className="ms-4 me-4"
-                    variant="outline-info"
-                    onClick={() => setFilter(1)}
-                >
-                    <i className="bi bi-sort-numeric-down me-2"></i>Price
-                </Button>
-                <Button
-                    className="ms-4"
-                    variant="outline-danger"
-                    onClick={() => setFilter(2)}
-                >
-                    <i class="bi bi-funnel-fill me-2"></i>Filter
-                </Button>
+                <FilterButton
+                    onAlpha={() => setFilter(0)}
+                    onPrice={() => setFilter(1)}
+                    onFilter={() => setFilter(2)}
+                    filter={filter}
+                />
             </div>
 
             <hr className="snow w-100 mb-4" />
