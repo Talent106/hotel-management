@@ -124,7 +124,7 @@ const Rooms = () => {
                                 <Stars reviews={item.reviews} center={true} />
                                 <Card.Text>
                                     From <span className="f-arial f-25 text-primary">${item.price}</span>
-                                    <p>Fees and taxes included</p>
+                                    <span style={{ display: 'block' }}>Fees and taxes included</span>
                                 </Card.Text>
                                 <div className="d-flex">
                                     <Button

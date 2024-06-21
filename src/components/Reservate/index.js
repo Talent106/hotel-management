@@ -115,8 +115,8 @@ const Reservate = ({
                                 />
                                 <div className="d-flex w-100">
                                     <div className="flex-d">
-                                        <p className="ms-4 mt-2"><i className="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
-                                        <p className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
+                                        <span className="ms-4 mt-2"><i className="bi bi-check-circle-fill me-3"></i>Cancel free of charge</span>
+                                        <span className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>No prepayment required</span>
                                     </div>
                                     <h3 className="text-yellow w-50 d-flex align-center justify-end">${price}</h3>
                                 </div>
@@ -131,9 +131,9 @@ const Reservate = ({
                                 />
                                 <div className="d-flex w-100">
                                     <div className="flex-d">
-                                        <p className="ms-4 mt-2"><i className="bi bi-check-circle-fill me-3"></i>Cancel free of charge</p>
-                                        <p className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>No prepayment required</p>
-                                        <p className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>Breakfast included</p>
+                                        <span className="ms-4 mt-2"><i className="bi bi-check-circle-fill me-3"></i>Cancel free of charge</span>
+                                        <span className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>No prepayment required</span>
+                                        <span className="ms-4"><i className="bi bi-check-circle-fill me-3"></i>Breakfast included</span>
                                     </div>
                                     <h3 className="text-yellow w-50 d-flex align-center justify-end">${Number(price) + 50}</h3>
                                 </div>
